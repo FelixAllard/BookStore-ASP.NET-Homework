@@ -1,8 +1,35 @@
-﻿@{
+﻿@using OnlineBookstoreAssignment.Controllers
+@{
     ViewData["Title"] = "Home Page";
 }
 
+
 <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
+    <h1 class="display-4">Welcome to our Online BookStore</h1>
+
+    
+    
+    
+    <!--
+    This part is for all the books
+    -->
+
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        @foreach (Book book in HomeController.allTheBooks)
+        {
+            <div class="col">
+                <div class="card h-100">
+                    <img src="@book.Image" class="card-img-top" alt="@book.Title">
+                    <div class="card-body">
+                        <h5 class="card-title">@book.Title</h5>
+                        <p class="card-text">@book.Description</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" class="btn btn-primary">Got to book!</a>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
     <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
 </div>
