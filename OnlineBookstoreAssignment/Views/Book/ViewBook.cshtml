@@ -1,0 +1,18 @@
+﻿@using OnlineBookstoreAssignment.Controllers
+@model Book
+@{
+    ViewData["Title"] = Model.Title;
+}
+<h1>@ViewData["Title"]</h1>
+<h2>
+    A book by @Model.Author - @Model.Category
+</h2>
+<div class="card-body">
+    <p>
+        @Model.Description<br/>
+        <strong>
+            @Model.Publisher
+        </strong>
+    </p>
+    
+</div>

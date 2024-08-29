@@ -7,15 +7,40 @@
 <div class="text-center">
     <h1 class="display-4">Welcome to our Online BookStore</h1>
 
-    
-    
-    
+
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Search For Book</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Categories
+                        </a>
+                        <ul class="dropdown-menu">
+                            @foreach (String category in BookController.GetBooksCategory())
+                            {
+                                <li><a class="dropdown-item" href="#">@category</a></li>
+                            }
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search For Book</button>
+                </form>
+            </div>
+        </div>
+    </nav>
     <!--
     This part is for all the books
     -->
-
     <div class="row row-cols-1 row-cols-md-3 g-4">
-        @foreach (Book book in HomeController.allTheBooks)
+        @foreach (Book book in BookController.allTheBooks)
         {
             <div class="col">
                 <div class="card h-100">
@@ -25,7 +50,7 @@
                         <p class="card-text">@book.Description</p>
                     </div>
                     <div class="card-footer">
-                        <a href="#" class="btn btn-primary">Got to book!</a>
+                        <a asp-controller="Book" asp-action="ViewBook" asp-route-id="@book.Id" class="btn btn-primary">Got to book!</a>
                     </div>
                 </div>
             </div>
