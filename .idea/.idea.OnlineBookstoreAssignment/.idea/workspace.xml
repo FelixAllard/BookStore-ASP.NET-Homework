@@ -8,12 +8,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fbb3a533-40f1-4042-ae7a-8ff1651aabdd" name="Changes" comment="First Push">
+    <list default="true" id="fbb3a533-40f1-4042-ae7a-8ff1651aabdd" name="Changes" comment="Added Category Searching">
+      <change afterPath="$PROJECT_DIR$/README.MD" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.OnlineBookstoreAssignment/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.OnlineBookstoreAssignment/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/OnlineBookstoreAssignment/Controllers/BookController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OnlineBookstoreAssignment/Controllers/BookController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OnlineBookstoreAssignment/Controllers/HomeController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OnlineBookstoreAssignment/Controllers/HomeController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OnlineBookstoreAssignment/Views/Home/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/OnlineBookstoreAssignment/Views/Home/Index.cshtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OnlineBookstoreAssignment/Views/Shared/_Layout.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/OnlineBookstoreAssignment/Views/Shared/_Layout.cshtml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,7 +100,7 @@
       <option name="presentableId" value="Default" />
       <updated>1724963725015</updated>
       <workItem from="1724963726326" duration="8241000" />
-      <workItem from="1724986774046" duration="2594000" />
+      <workItem from="1724986774046" duration="2963000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <option name="closed" value="true" />
@@ -144,7 +142,15 @@
       <option name="project" value="LOCAL" />
       <updated>1724986838081</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Added Category Searching">
+      <option name="closed" value="true" />
+      <created>1724989415531</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1724989415531</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -160,6 +166,7 @@
     <MESSAGE value="Working Individual book display!" />
     <MESSAGE value="Working individual book bugfix" />
     <MESSAGE value="First Push" />
-    <option name="LAST_COMMIT_MESSAGE" value="First Push" />
+    <MESSAGE value="Added Category Searching" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Category Searching" />
   </component>
 </project>
