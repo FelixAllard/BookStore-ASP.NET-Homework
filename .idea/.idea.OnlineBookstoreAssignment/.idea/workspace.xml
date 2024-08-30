@@ -8,15 +8,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fbb3a533-40f1-4042-ae7a-8ff1651aabdd" name="Changes" comment="Working Individual book display!">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.OnlineBookstoreAssignment/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.OnlineBookstoreAssignment/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OnlineBookstoreAssignment/Controllers/BookController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OnlineBookstoreAssignment/Controllers/BookController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OnlineBookstoreAssignment/Models/Book.cs" beforeDir="false" afterPath="$PROJECT_DIR$/OnlineBookstoreAssignment/Models/Book.cs" afterDir="false" />
-    </list>
+    <list default="true" id="fbb3a533-40f1-4042-ae7a-8ff1651aabdd" name="Changes" comment="Working individual book bugfix" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DpaMonitoringSettings">
+    <option name="autoShow" value="false" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -84,7 +83,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1724963725015</updated>
-      <workItem from="1724963726326" duration="6713000" />
+      <workItem from="1724963726326" duration="8241000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <option name="closed" value="true" />
@@ -110,7 +109,15 @@
       <option name="project" value="LOCAL" />
       <updated>1724972989780</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Working individual book bugfix">
+      <option name="closed" value="true" />
+      <created>1724979314135</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1724979314135</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -124,6 +131,7 @@
     <MESSAGE value="Initial Commit" />
     <MESSAGE value="Working Book display!" />
     <MESSAGE value="Working Individual book display!" />
-    <option name="LAST_COMMIT_MESSAGE" value="Working Individual book display!" />
+    <MESSAGE value="Working individual book bugfix" />
+    <option name="LAST_COMMIT_MESSAGE" value="Working individual book bugfix" />
   </component>
 </project>
