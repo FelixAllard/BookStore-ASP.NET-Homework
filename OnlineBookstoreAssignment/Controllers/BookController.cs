@@ -4,10 +4,17 @@ using OnlineBookstoreAssignment.Models;
 
 namespace OnlineBookstoreAssignment.Controllers;
 
-public class BookController(ILogger<HomeController> logger) : Controller
+public class BookController : Controller
 {
-    private readonly ILogger<HomeController> _logger = logger;
+    
+    
+    
+    private static ILogger<BookController> _logger;
 
+    public BookController(ILogger<BookController> logger)
+    {
+        _logger = logger;
+    }
     public static List<Book> allTheBooks = new List<Book>
     {
         new Book { Id = 1, ISBN = "1",Title = "Book One", Author = "Author A", Publisher = "Publisher A", Genre = "Genre A", Price = "9.99", Quantity = "10", Description = "A fascinating tale of adventure.", Category = "Fiction", Image = "image1.jpg" },
@@ -32,6 +39,20 @@ public class BookController(ILogger<HomeController> logger) : Controller
     {
         return allTheBooks.Select(b => b.Category).Distinct().ToList();
     }
+    public static Book[] GetByCategory(string category)
+    {
+        _logger?.LogInformation($"GetByCategory(): {category}");
+    
+        if (string.IsNullOrEmpty(category))
+            return BookController.allTheBooks.ToArray();
+
+        return BookController.allTheBooks
+            .Where(book => book.Category.Equals(category, StringComparison.OrdinalIgnoreCase))
+            .ToArray();
+    }
+
+    
+    
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
     public IActionResult Error()
     {
