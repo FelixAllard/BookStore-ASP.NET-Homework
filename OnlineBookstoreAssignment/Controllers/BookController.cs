@@ -39,6 +39,17 @@ public class BookController : Controller
     {
         return allTheBooks.Select(b => b.Category).Distinct().ToList();
     }
+    public IActionResult Search(string query)
+    {
+        string searchString = query;
+        if (string.IsNullOrEmpty(searchString))
+        {
+            searchString = "";
+        }
+        return View(model : searchString);
+    }
+    
+    
     public static Book[] GetByCategory(string category)
     {
         _logger?.LogInformation($"GetByCategory(): {category}");
@@ -50,7 +61,10 @@ public class BookController : Controller
             .Where(book => book.Category.Equals(category, StringComparison.OrdinalIgnoreCase))
             .ToArray();
     }
-
+    public static Book[] SearchBooksByISBN(string searchTerm)
+    {
+        return allTheBooks.Where(book => book.ISBN.Contains(searchTerm, StringComparison.OrdinalIgnoreCase)).ToArray();
+    }
     
     
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
